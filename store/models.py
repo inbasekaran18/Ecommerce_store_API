@@ -60,6 +60,7 @@ class Address(models.Model):
     # one to one relationship
     customer = models.OneToOneField(
         Customer, on_delete=models.CASCADE, primary_key=True)
+    zip = models.CharField(max_length=255)
     # one to many relationship
     # customer=models.ForeignKey(Customer,on_delete=models.CASCADE)
 
